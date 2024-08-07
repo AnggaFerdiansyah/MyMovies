@@ -1,6 +1,178 @@
+
 #pict {
   background-image: url(img/Untitled-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+#result .card-title{
+    padding-left: 0;
+}
+.text-truncate-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.type{
+    position: absolute;
+    text-transform: uppercase;
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.row {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bg{
+    margin-bottom: 20vh;
+
+}
+.bgimg{
+    position: fixed;
+    filter: brightness(50%);
+    opacity: 1;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+}
+.bgtext{
+    display: flex;
+    margin: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    text-align: justify;
+    color: white;
+    text-decoration: none;
+}
+.bgtext h1{
+    font-weight: lighter;
+}
+.search-active{
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    
+    bottom: 30%;
+    text-align: center;
+}
+.False{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#infoModal  li.list-group-item.w-75{
+    padding: 10px 10px;
+}
+ /* X-Small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 0px) { 
+    
+    .card {
+        width: 11rem;
+        height: 26rem;
+        margin: auto;
+    }
+    .card img{
+        height:400px;
+        background-position: center;
+        background-size: cover;
+    }
+    #imgModal{
+        margin-bottom: 20px;
+    }
+    .bgtext{
+        padding: 0 70px;
+    }
+    .bgtext h1{
+        font-size: 20px;
+    }
+    .list-group li{
+        padding-left: 10px;
+        padding-right: 70px;
+    }
+}
+@media (min-width: 576px) { 
+    
+    .bgtext{
+        padding: 0 100px;
+    }
+    .bgtext h1{
+        font-size: 2rem;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .card {
+        width: 18rem;
+        height: 34rem;
+        margin: auto;
+    }
+    .bgtext{
+        padding: 0 150px;
+    }
+    
+    .modal-body .row{
+        flex-flow: column;
+        justify-content: center;
+        
+    }
+    #imgModal,#infoModal{
+        align-self: center;
+        width: 500px;
+    }
+    #imgModal img{
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #imgModal,#infoModal{
+        width: 50%;
+    } 
+    .modal-body .row{
+        flex-flow: row;
+    }
+    .bgtext{
+        padding: 0 200px;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .bgtext{
+        padding: 0 300px;
+    }
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .bgtext{
+        padding: 0 400px;
+    }
+ }
