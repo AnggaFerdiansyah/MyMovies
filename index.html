@@ -22,11 +22,15 @@
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Search your Anime and Movie" id="search-input" />
             <button class="btn btn-dark" type="button" id="search-button">Search</button>
+            <button  class="btn btn-dark d-none" type="button" id="load">
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              Loading...
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fuild d-flex">
+    <div class="container-fuild d-flex justify-content-center">
       <div class="row flex-wrap" id="result">
         <div class="bg"><img class="bgimg" src="img/Untitled-1.jpg" alt=""></div>
         <div class="bgtext"><h1>Anime and Movie Database from OMDb API web service to obtain movie information, all content and images on the site are contributed and maintained by our users.</h1></div>
@@ -50,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid footer">
       <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <!-- Grid container -->
         <div class="container pt-4">

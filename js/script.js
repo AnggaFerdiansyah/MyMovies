@@ -12,11 +12,17 @@ function search() {
     success: function (result) {
         console.log(result)
       let res = result.Search;
+      $("#search-button").toggleClass("d-none");
+      $("#load").toggleClass("d-none");
         
       if (result.Response == "True") {
         let movie = result.Search;
+        $("#search-button").toggleClass("d-none")
+        $("#load").toggleClass("d-none")
         $.each(movie, function (i, data) {
+          
           $("#result").append(
+            
             `<div class="col p-0 col-cent">
                     <div class="card mb-4" >
                         <h1 class="type">` +data.Type +`</h1>
@@ -33,6 +39,8 @@ function search() {
           );
         });
       } else {
+        $("#search-button").toggleClass("d-none")
+        $("#load").toggleClass("d-none")
         $("#result").html(`
             <div class="False" id="result">
             <h1 class='text-center'>Movie not found!</h1>"
